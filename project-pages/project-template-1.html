@@ -1,0 +1,122 @@
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+    
+     <link rel="icon" href="../assets/images/1311.png" />
+     <title>Portfolio</title>
+   
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/typography.css">
+    <link rel="stylesheet" href="../css/utilities.css">
+
+		<script defer src="../js/script.js"></script>
+    <style>
+      /* Style for the navbar container */
+      .navbar {
+        background-color: #161616; /* Background color */
+        padding: 20px; /* Padding around the navbar */
+        text-align: center; /* Center-align the content */
+      }
+
+      /* Style for the navigation title */
+      .nav-title {
+        font-size: 24px; /* Font size */
+        color: #fff; /* Text color */
+        text-decoration: none; /* Remove underline */
+      }
+
+      /* Style for the "Contact Me" button */
+      .button-nav {
+        background-color: #FFFFFF; /* Button background color */
+        color: white; /* Button text color */
+        text-decoration: none; /* Remove underline */
+        padding: 8px 16px; /* Padding inside the button */
+        margin-left: 20px; /* Add some space to the left of the button */
+        border-radius: 5px; /* Rounded corners */
+        transition: background-color 0.3s ease; /* Smooth transition for background color */
+      }
+
+      /* Hover effect for the button */
+      .button-nav:hover {
+        background-color: antiquewhite; /* New background color on hover */
+      }
+      .gallery-image {
+        width: 600px;
+        height: 350px;
+        border: 1px solid black;
+      }
+      .project-header-image {
+        width: 600px;
+        height: 450px;
+        border: 1px solid black;
+        margin-left: 120px;
+      }
+
+      .gallery-image-container {
+        margin-bottom: 20px;
+        padding-right: 30px;
+      }
+
+  }
+</style>
+	</head>
+	<body>
+    <!-- NAVBAR -->
+    <div class="navbar">
+      <a class="nav-title-link" href="../index.html">
+       
+         -->
+        <span class="nav-title">Portfolio Title</span>
+       
+        <a class="button-nav" href="mailto:rupakraut78@gmail.com">
+          <span class="button-text-nav">Contact Me</span>
+        </a>
+      </a>
+    </div>
+
+    <!-- MAIN PAGE CONTENT -->
+    <div id="main-content">
+
+      <!-- PROJECT HEADER -->
+      <div id="project-header">
+          
+        <div class="main-title">ML Object Detection System</div>
+        <div class="body-text">It is a openCV based object detection system made through python. It utilizes ultralytics as an AI model and numpy to model the database. It has the potential of identifying 80 different objects.</div>
+        <image class="project-header-image" src="../assets/images/ml_object_detection-2.gif";>
+      </div>
+        
+
+      
+      <div id="project-details">
+        <div class="subheader-text">Project Details / Background</div>
+        <div class="project-details-content">
+          <div class="body-text">It is a openCV based object detection system made through python. It utilizes ultralytics as an AI model and numpy to model the database. It has the potential of identifying 80 different objects.</div>
+          <div class="body-text"></div>
+        </div>
+      </div>
+
+     
+      <div id="project-gallery">
+        <!-- TODO - Change the 'subheader-text' to whatever you want the Gallery section header to say -->
+        <div class="subheader-text">Demos</div>
+        <div class="project-gallery-content">
+            
+            <div class="gallery-image-container" style="text-align: center;">
+              <img src="../assets/images/ml_object_detection-3.gif" class="gallery-image";>
+              <span class="image-caption"><p align = "justify">This is the demo of ML detection detecting the streets of Paris.</p></span>
+            </div>
+            <div class="gallery-image-container" style="text-align: center;">
+              <img src="../assets/images/ml_object_detection-4.gif" class="gallery-image" style="border: 1px solid black";>
+              <span class="image-caption"><p align = "justify">These are the results of the detection system in the terminal.</p></span>
+            </div>
+        </div>
+      </div>
+    </div>
+
+
+	</body>
+</html>
