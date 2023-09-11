@@ -53,13 +53,19 @@
         width: 600px;
         height: 450px;
         border: 1px solid black;
-        margin-left: 120px;
+/*        margin-left: 120px;*/
       }
 
       .gallery-image-container {
         margin-bottom: 20px;
         padding-right: 30px;
       }
+
+      .centered-image {
+        display: block;
+        margin: 0 auto; /* This will center the image horizontally */
+}
+
 
   }
 </style>
@@ -82,11 +88,11 @@
     <div id="main-content">
 
       <!-- PROJECT HEADER -->
-      <div id="project-header">
+      <div id="project-header" class="centered-image">
           
         <div class="main-title">ML Object Detection System</div>
         <div class="body-text">It is a openCV based object detection system made through python. It utilizes ultralytics as an AI model and numpy to model the database. It has the potential of identifying 80 different objects.</div>
-        <image class="project-header-image" src="../assets/images/ml_object_detection-2.gif";>
+        <image class="centered-image" src="../assets/images/ml_object_detection-1.gif";>
       </div>
         
 
@@ -105,12 +111,13 @@
         <div class="subheader-text">Demos</div>
         <div class="project-gallery-content">
             
-            <div class="gallery-image-container" style="text-align: center;">
-              <img src="../assets/images/ml_object_detection-3.gif" class="gallery-image";>
-              <span class="image-caption"><p align = "justify">This is the demo of ML detection detecting the streets of Paris.</p></span>
+            <div class="gallery-image-container">
+              <img src="../assets/images/ml_object_detection-3.gif" class="centered-image">
+              <span class="image-caption"><p align="justify">This is the demo of ML detection detecting the streets of Paris.</p></span>
             </div>
+
             <div class="gallery-image-container" style="text-align: center;">
-              <img src="../assets/images/ml_object_detection-4.gif" class="gallery-image" style="border: 1px solid black";>
+              <img src="../assets/images/ml_object_detection-4.gif" class="centered-image" style="border: 1px solid black";>
               <span class="image-caption"><p align = "justify">These are the results of the detection system in the terminal.</p></span>
             </div>
         </div>
