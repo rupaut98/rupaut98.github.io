@@ -4,16 +4,27 @@
 	<head>
 		<meta charset="utf-8">
     
-     <link rel="icon" href="../assets/images/1311.png" />
+     <link rel="icon" href="./assets/icons/icon.png" />
      <title>Portfolio</title>
    
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
 		<link rel="stylesheet" href="../css/layout.css">
     <link rel="stylesheet" href="../css/typography.css">
     <link rel="stylesheet" href="../css/utilities.css">
 
 		<script defer src="../js/script.js"></script>
+
+    <script>
+      const imageContainer1 = document.getElementById("image-container-1");
+
+      // Define the desired x and y coordinates (0% is left/top, 100% is right/bottom)
+      const desiredX = 0; // Adjust as needed (e.g., 0 for left, 50 for center)
+      const desiredY = 100; // Adjust as needed (e.g., 0 for top, 50 for center)
+
+      // Set the background-position property based on desired coordinates
+      imageContainer1.style.backgroundPosition = `${desiredX}% ${desiredY}%`;
+    </script>
     <style>
       /* Style for the navbar container */
       .navbar {
@@ -58,12 +69,11 @@
 
       .gallery-image-container {
         margin-bottom: 20px;
-        padding-right: 30px;
+        
       }
 
       .centered-image {
-        display: block;
-        margin: 0 auto; /* This will center the image horizontally */
+        height: ;
 }
 
 
@@ -76,11 +86,9 @@
       <a class="nav-title-link" href="../index.html">
        
          -->
-        <span class="nav-title">Portfolio Title</span>
+        <span class="nav-title">Home</span>
        
-        <a class="button-nav" href="mailto:rupakraut78@gmail.com">
-          <span class="button-text-nav">Contact Me</span>
-        </a>
+        
       </a>
     </div>
 
@@ -90,18 +98,20 @@
       <!-- PROJECT HEADER -->
       <div id="project-header" class="centered-image">
           
-        <div class="main-title">ML Object Detection System</div>
-        <div class="body-text">It is a openCV based object detection system made through python. It utilizes ultralytics as an AI model and numpy to model the database. It has the potential of identifying 80 different objects.</div>
-        <image class="centered-image" src="../assets/images/ml_object_detection-1.gif";>
+        <div class="main-title">Real Time Object Detection System</div>
+        <div class="body-text" style="font-size: 16px;" style="font-weight: 500;">It is an ultralytics YOLO (You Only Look Once) based real time object detection model which utilizes openCV and object detection loop and has the potential of identifying 80 different objects.</div>
+        <image class="centered-image" src="../assets/images/ml_object_detection-1-edit.gif" style="border: 1px solid black";>
       </div>
         
 
       
       <div id="project-details">
         <div class="subheader-text">Project Details / Background</div>
-        <div class="project-details-content">
-          <div class="body-text">It is a openCV based object detection system made through python. It utilizes ultralytics as an AI model and numpy to model the database. It has the potential of identifying 80 different objects.</div>
-          <div class="body-text"></div>
+        <div class="project-details-content" style="text-align: justify;">
+          <div class="body-text" style="font-size: 16px;" style="font-weight: 500;">I loaded the yolov8m.pt model into the code which utilizes its deep learning technique to divide an image into grids and predicts the bounding boxes and class probabilities of objects in the grid with great accuracy. I used OpenCV to read video frames, display frames with detected objects and help in rendering bounding boxes and labels.</div>
+          <div class="body-text" style="font-size: 16px;" style="font-weight: 500;">
+            The object detection loop continuously reads frames from the video while YOLO and openCV are busy extracting the data for boxes and class. After YOLO and openCV perform object detection, I have used numpy to convert the extracted bounding boxes and class information into numpy arrays for efficient data manipulation.
+          </div>
         </div>
       </div>
 
@@ -112,14 +122,31 @@
         <div class="project-gallery-content">
             
             <div class="gallery-image-container">
-              <img src="../assets/images/ml_object_detection-3.gif" class="centered-image">
-              <span class="image-caption"><p align="justify">This is the demo of ML detection detecting the streets of Paris.</p></span>
-            </div>
+    <span class="image-caption">
+        <p align="justify" style="font-size: 16px; font-weight: 500;">
+            I tested out different models of YOLOv8 on its accuracy and speed. First, I tried to test it on a self-recorded video of my university with fewer objects in the video.
+        </p>
+    </span>
+    <img src="../assets/images/ml_object_detection-edit.gif" class="centered-image" style="border: 1px solid black; width: 948px; height: 602px;">
+</div>
 
-            <div class="gallery-image-container" style="text-align: center;">
-              <img src="../assets/images/ml_object_detection-4.gif" class="centered-image" style="border: 1px solid black";>
-              <span class="image-caption"><p align = "justify">These are the results of the detection system in the terminal.</p></span>
-            </div>
+
+        
+    <span class="image-caption">
+        <p align="justify" style="font-size: 16px; font-weight: 500;">Then I tried to test it on a self-recorded video with comparatively more objects and placed at a farther distance. I have used the yolov8m model on the left side and yolov8x model on the right side. It seemed like the yolov8m.pt model couldn't recognize objects at a farther distance, so I decided to use its yolov8x.pt model. With this model, I could detect objects concisely but it demanded additional GPU and time to execute. I have zoomed into the areas of the video where the detection efficiency is more apparent.</p>
+    </span>
+    <div class="gallery-image-container half-width relative" id = "image-container-1">
+    <img src="../assets/images/ml_object_detection-4-edit.gif" class="object-none h-88 w-96" style="border: 1px solid black; padding-right: 0px;">
+</div>
+
+<div class="gallery-image-container half-width relative">
+    <!-- <span class="image-caption">
+        <p align="justify" style= "font-size: 16px; font-weight: 500;">With this model, I could detect objects concisely but it demanded additional GPU and time to execute.</p>
+    </span> -->
+    <img src="../assets/images/ml_object_detection-6.gif" class="object-none h-88 w-96" style="border: 1px solid black; padding-right: 0px;">
+</div>
+
+
         </div>
       </div>
     </div>
