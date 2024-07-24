@@ -5,7 +5,7 @@ module.exports = {
     title: 'Rupak Raut',
     description:
       'Rupak Raut is a software engineer who loves turning big challenges into simple, effective solutions.',
-    siteUrl: 'https://rupakraut.com', // No trailing slash allowed!
+    siteUrl: 'https://rupaut98.github.io', // No trailing slash allowed!
     image: '/logo.jpg', // Path to your image you placed in the 'static' folder
   },
   plugins: [
