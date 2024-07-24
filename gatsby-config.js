@@ -6,7 +6,7 @@ module.exports = {
     description:
       'Rupak Raut is a software engineer who loves turning big challenges into simple, effective solutions.',
     siteUrl: 'https://rupakraut.com', // No trailing slash allowed!
-    image: '/logo.png', // Path to your image you placed in the 'static' folder
+    image: '/logo.jpg', // Path to your image you placed in the 'static' folder
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
