@@ -1,0 +1,20 @@
+# Dependency directories
+.cache/
+node_modules/
+yarn-error.log
+package-lock.json
+
+# Build directory
+/public/
+
+# System files
+.DS_Store
+
+# VSCode configuration directory
+.vscode/
+
+# Historical files
+.history/
+
+# Optional: If you use npm instead of yarn, you may also want to include
+npm-debug.log*
