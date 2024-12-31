@@ -1,5 +1,5 @@
 ---
-date: '2'
+date: '3'
 title: 'Newspaper App'
 github: 'https://github.com/rupaut98/newspaper-app'
 tech:

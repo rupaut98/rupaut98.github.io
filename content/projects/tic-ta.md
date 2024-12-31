@@ -1,5 +1,5 @@
 ---
-date: '3'
+date: '4'
 title: 'Tic Tac Toe GUI using OOP'
 github: 'https://github.com/rupaut98/tic-tac-toe-gui'
 tech:

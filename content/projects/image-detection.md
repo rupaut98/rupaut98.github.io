@@ -1,5 +1,5 @@
 ---
-date: '1'
+date: '2'
 title: 'Benchmarked five image detection models'
 github: 'https://github.com/rupaut98/img-det-benchmark'
 tech:

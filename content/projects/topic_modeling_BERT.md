@@ -1,5 +1,5 @@
 ---
-date: '4'
+date: '1'
 title: 'Topic Modeling By BERT'
 github: 'https://github.com/rupaut98/topic_modeling_BERT'
 tech:
