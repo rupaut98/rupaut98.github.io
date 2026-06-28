@@ -10,7 +10,6 @@
 export const profile = {
   name: 'Rupak Raut',
   role: 'Software Engineer · Agentic AI & Full-Stack', // mirrors LinkedIn; broad noun + applied-AI edge
-  // hero pitch — his own words
   pitch:
     "I'd rather sit with the people using the software than wait for a spec. I find the real problems myself and own the fix end to end — from the first customer conversation to production.",
   email: 'rupakraut78@gmail.com',

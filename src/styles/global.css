@@ -3,8 +3,7 @@
 /* dark mode via .dark on <html> */
 @custom-variant dark (&:where(.dark, .dark *));
 
-/* TinyFish system: one "ink" color used at fractional opacity for every
-   border/label/fill, on an off-white surface. Flip the two vars for dark. */
+/* One "ink" color at fractional opacity for every border/label/fill; flip the vars for dark. */
 @theme {
   --color-ink: var(--ink);
   --color-surface: var(--surface);
@@ -36,13 +35,10 @@ body {
   background-color: var(--surface);
 }
 
-/* Tailwind opacity modifiers (text-ink/60 etc.) use color-mix on --color-ink,
-   which resolves to var(--ink). Selection uses the lime highlight. */
 ::selection {
   background: color-mix(in srgb, var(--lime) 40%, transparent);
 }
 
-/* Reusable bits */
 @layer components {
   .eyebrow {
     font-family: var(--font-mono);
