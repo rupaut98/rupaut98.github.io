@@ -12,7 +12,14 @@ const links = [
   style="background-color: color-mix(in srgb, var(--surface) 80%, transparent); border-top: 1px solid color-mix(in srgb, var(--ink) 14%, transparent);"
 >
   <nav class="mx-auto flex max-w-6xl items-center justify-between px-5 py-4 sm:px-8">
-    <a href="#top" class="font-display text-lg tracking-tight">{profile.name}</a>
+    <a href="#top" class="flex items-center gap-2.5 font-display text-lg tracking-tight">
+      <svg viewBox="0 0 100 100" class="h-7 w-7 shrink-0" fill="none" aria-hidden="true">
+        <rect x="4" y="4" width="92" height="92" stroke="currentColor" stroke-width="4" />
+        <path d="M36 30 V70 M36 30 H60 V49 H36 M48 49 L64 70" stroke="currentColor" stroke-width="10" stroke-linecap="square" stroke-linejoin="miter" />
+        <rect x="78" y="78" width="10" height="10" fill="#ff6700" />
+      </svg>
+      {profile.name}
+    </a>
 
     <div class="flex items-center gap-1 sm:gap-2">
       {
