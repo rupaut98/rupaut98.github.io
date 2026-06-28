@@ -42,7 +42,7 @@ export const skills = [
   'Docker / CI-CD',
 ];
 
-export type Job = {
+type Job = {
   company: string;
   title: string;
   range: string;
