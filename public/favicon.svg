@@ -1,9 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" role="img" aria-label="Rupak Raut">
-  <style>
-    :root { color: #0a0a0a }
-    @media (prefers-color-scheme: dark) { :root { color: #fafafa } }
-  </style>
-  <rect x="4" y="4" width="92" height="92" fill="none" stroke="currentColor" stroke-width="2" vector-effect="non-scaling-stroke"/>
-  <path d="M36 30 V70 M36 30 H60 V49 H36 M48 49 L64 70" fill="none" stroke="currentColor" stroke-width="12" stroke-linecap="square" stroke-linejoin="miter"/>
-  <rect x="78" y="78" width="10" height="10" fill="#ff6700"/>
+  <rect width="100" height="100" rx="20" fill="#0a0a0a"/>
+  <path d="M28 32 L52 50 L28 68" fill="none" stroke="#fafafa" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="30" y="74" width="44" height="9" rx="2" fill="#ff6700"/>
 </svg>

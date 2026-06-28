@@ -1,7 +1,7 @@
 ---
 import '../styles/global.css';
 import { profile } from '../data/site';
-const { title = `${profile.name} — ${profile.role}`, description = profile.pitch } = Astro.props;
+const { title = profile.name, description = profile.pitch } = Astro.props;
 ---
 
 <!doctype html>
@@ -12,7 +12,7 @@ const { title = `${profile.name} — ${profile.role}`, description = profile.pit
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <title>{title}</title>
     <meta name="description" content={description} />
-    <meta property="og:title" content={title} />
+    <meta property="og:title" content={`${profile.name} — ${profile.role}`} />
     <meta property="og:description" content={description} />
     <meta property="og:type" content="website" />
 
