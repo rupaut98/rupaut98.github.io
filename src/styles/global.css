@@ -8,7 +8,6 @@
 @theme {
   --color-ink: var(--ink);
   --color-surface: var(--surface);
-  --color-elevated: var(--elevated);
   --color-accent: #ff6700;
   --color-lime: #cafe54;
 
@@ -19,13 +18,11 @@
 :root {
   --ink: #0a0a0a;
   --surface: #fafafa;
-  --elevated: #f0f0ee;
 }
 
 .dark {
   --ink: #fafafa;
   --surface: #0a0a0a;
-  --elevated: #141414;
 }
 
 html {
@@ -37,7 +34,6 @@ html {
 body {
   font-family: var(--font-mono);
   background-color: var(--surface);
-  color: rgb(var(--ink) / 1); /* overridden below via color-mix-safe vars */
 }
 
 /* Tailwind opacity modifiers (text-ink/60 etc.) use color-mix on --color-ink,
