@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" role="img" aria-label="Rupak Raut">
+  <style>
+    :root { color: #0a0a0a }
+    @media (prefers-color-scheme: dark) { :root { color: #fafafa } }
+  </style>
+  <rect x="4" y="4" width="92" height="92" fill="none" stroke="currentColor" stroke-width="2" vector-effect="non-scaling-stroke"/>
+  <path d="M36 30 V70 M36 30 H60 V49 H36 M48 49 L64 70" fill="none" stroke="currentColor" stroke-width="12" stroke-linecap="square" stroke-linejoin="miter"/>
+  <rect x="78" y="78" width="10" height="10" fill="#ff6700"/>
+</svg>
