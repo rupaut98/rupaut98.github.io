@@ -1,0 +1,48 @@
+---
+import '../styles/global.css';
+import { profile } from '../data/site';
+const { title = `${profile.name} — ${profile.role}`, description = profile.pitch } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🐟</text></svg>" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Host+Grotesk:wght@400;500;600&family=Geist+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- set theme before paint to avoid flash -->
+    <script is:inline>
+      const t = localStorage.getItem('theme');
+      const dark = t === 'dark' || (!t && matchMedia('(prefers-color-scheme: dark)').matches);
+      document.documentElement.classList.toggle('dark', dark);
+    </script>
+  </head>
+  <body class="bg-surface text-ink/90 antialiased">
+    <slot />
+
+    <!-- scroll reveal -->
+    <script is:inline>
+      const io = new IntersectionObserver(
+        (es) => es.forEach((e) => e.isIntersecting && e.target.classList.add('in')),
+        { threshold: 0.12 }
+      );
+      addEventListener('DOMContentLoaded', () =>
+        document.querySelectorAll('.reveal').forEach((el) => io.observe(el))
+      );
+    </script>
+  </body>
+</html>
