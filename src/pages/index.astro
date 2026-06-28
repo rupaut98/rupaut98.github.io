@@ -23,7 +23,9 @@ import {
         <span class="eyebrow w-fit bg-accent px-3 py-1.5 text-[#0a0a0a]">
           {profile.role}
         </span>
-        <h1 class="font-display text-5xl leading-[0.95] tracking-tight text-ink/95 sm:text-7xl">
+        <h1
+          class="font-display text-5xl leading-[0.95] tracking-tight text-ink/95 sm:text-7xl"
+        >
           {profile.name}
         </h1>
         <p class="max-w-2xl text-sm leading-relaxed text-ink/60 sm:text-base">
@@ -45,7 +47,8 @@ import {
           {
             profile.openToWork && (
               <span class="eyebrow flex items-center gap-2 px-2 text-ink/50">
-                <span class="h-2 w-2 rounded-full bg-lime" /> {profile.openToWork}
+                <span class="h-2 w-2 rounded-full bg-lime" />{' '}
+                {profile.openToWork}
               </span>
             )
           }
@@ -57,7 +60,9 @@ import {
       <div class="px-4 sm:px-8">
         <div class="mb-8 flex items-baseline justify-between">
           <h2 class="eyebrow text-ink/50">Selected Work</h2>
-          <span class="eyebrow text-ink/30">{String(projects.length).padStart(2, '0')}</span>
+          <span class="eyebrow text-ink/30"
+            >{String(projects.length).padStart(2, '0')}</span
+          >
         </div>
         <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 xl:grid-cols-3">
           {projects.map((project) => <ProjectCard project={project} />)}
@@ -84,7 +89,9 @@ import {
                       {job.company}
                     </a>
                   ) : (
-                    <span class="font-display text-lg text-ink/95">{job.company}</span>
+                    <span class="font-display text-lg text-ink/95">
+                      {job.company}
+                    </span>
                   )}
                   <span class="text-xs text-ink/50">{job.title}</span>
                 </div>
@@ -116,7 +123,9 @@ import {
                 class="reveal group flex flex-col gap-2 border border-ink/12 bg-ink/[0.02] p-5 transition-colors hover:border-ink/30"
               >
                 <div class="flex items-center justify-between">
-                  <h3 class="font-display text-lg text-ink/95 group-hover:text-accent">{os.name}</h3>
+                  <h3 class="font-display text-lg text-ink/95 group-hover:text-accent">
+                    {os.name}
+                  </h3>
                   <span class="eyebrow text-ink/40">{os.stars}</span>
                 </div>
                 <p class="text-sm leading-relaxed text-ink/60">{os.blurb}</p>
@@ -131,7 +140,11 @@ import {
       <div class="grid gap-10 px-4 sm:px-8 md:grid-cols-[1.4fr_1fr]">
         <div class="reveal flex flex-col gap-4">
           <h2 class="eyebrow mb-2 text-ink/50">About</h2>
-          {about.map((p) => <p class="text-sm leading-relaxed text-ink/70">{p}</p>)}
+          {
+            about.map((p) => (
+              <p class="text-sm leading-relaxed text-ink/70">{p}</p>
+            ))
+          }
         </div>
         <div class="reveal flex flex-col gap-6">
           <div>
@@ -146,7 +159,9 @@ import {
             <div class="flex flex-wrap gap-1.5">
               {
                 skills.map((s) => (
-                  <span class="eyebrow border border-ink/15 px-2 py-1 text-[9px] text-ink/55">{s}</span>
+                  <span class="eyebrow border border-ink/15 px-2 py-1 text-[9px] text-ink/55">
+                    {s}
+                  </span>
                 ))
               }
             </div>
@@ -155,12 +170,18 @@ import {
       </div>
     </section>
 
-    <section id="contact" class="ledger reveal flex flex-col items-center gap-6 px-4 py-24 text-center">
-      <h2 class="font-display text-4xl leading-tight tracking-tight text-ink/95 sm:text-5xl">
+    <section
+      id="contact"
+      class="ledger reveal flex flex-col items-center gap-6 px-4 py-24 text-center"
+    >
+      <h2
+        class="font-display text-4xl leading-tight tracking-tight text-ink/95 sm:text-5xl"
+      >
         Let's build something.
       </h2>
       <p class="max-w-md text-sm text-ink/55">
-        Open to software, full-stack, and AI roles — and interesting collaborations. My DMs are open.
+        Open to software, full-stack, and AI roles — and interesting
+        collaborations. My DMs are open.
       </p>
       <a
         href={`mailto:${profile.email}`}
@@ -172,12 +193,27 @@ import {
   </main>
 
   <footer class="ledger mx-auto max-w-6xl px-5 sm:px-8">
-    <div class="flex flex-col items-center justify-between gap-4 py-8 sm:flex-row">
+    <div
+      class="flex flex-col items-center justify-between gap-4 py-8 sm:flex-row"
+    >
       <span class="eyebrow text-ink/40">© {profile.name}</span>
       <div class="flex gap-5">
-        <a href={profile.socials.github} target="_blank" rel="noreferrer" class="eyebrow text-ink/50 hover:text-ink">GitHub</a>
-        <a href={profile.socials.linkedin} target="_blank" rel="noreferrer" class="eyebrow text-ink/50 hover:text-ink">LinkedIn</a>
-        <a href={`mailto:${profile.email}`} class="eyebrow text-ink/50 hover:text-ink">Email</a>
+        <a
+          href={profile.socials.github}
+          target="_blank"
+          rel="noreferrer"
+          class="eyebrow text-ink/50 hover:text-ink">GitHub</a
+        >
+        <a
+          href={profile.socials.linkedin}
+          target="_blank"
+          rel="noreferrer"
+          class="eyebrow text-ink/50 hover:text-ink">LinkedIn</a
+        >
+        <a
+          href={`mailto:${profile.email}`}
+          class="eyebrow text-ink/50 hover:text-ink">Email</a
+        >
       </div>
     </div>
   </footer>

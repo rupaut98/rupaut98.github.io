@@ -23,7 +23,7 @@ export const profile = {
 
 export const about = [
   "I'm a forward-deployed engineer who likes being close to the problem. Recently I shipped a staff-facing clinical platform — connected to the EHR and running across 7 practice locations. No one handed me requirements; I went on-site, found where the day actually broke down, and built the system end to end, just me and my agents.",
-  'Same playbook on consumer products: I built a multi-timeline video editor from scratch that\'s now in users\' hands, generated thousands in revenue, and anchored a key company partnership. Before that I was a founding engineer at OmniSynkAI (YC W24), an early-stage e-commerce startup.',
+  "Same playbook on consumer products: I built a multi-timeline video editor from scratch that's now in users' hands, generated thousands in revenue, and anchored a key company partnership. Before that I was a founding engineer at OmniSynkAI (YC W24), an early-stage e-commerce startup.",
   "On the side I contribute to open source — like ByteDance's trae-agent and Unsloth — love tinkering with LLMs, and I'm currently exploring mechanistic interpretability. CS + Math, 4.0 GPA.",
 ];
 
