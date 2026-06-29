@@ -22,9 +22,10 @@ export const profile = {
 };
 
 export const about = [
-  "I'm a forward-deployed engineer who likes being close to the problem. Recently I shipped a staff-facing clinical platform — connected to the EHR and running across 7 practice locations. No one handed me requirements; I went on-site, found where the day actually broke down, and built the system end to end, just me and my agents.",
-  "Same playbook on consumer products: I built a multi-timeline video editor from scratch that's now in users' hands, generated thousands in revenue, and anchored a key company partnership. Before that I was a founding engineer at OmniSynkAI (YC W24), an early-stage e-commerce startup.",
-  "On the side I contribute to open source — like ByteDance's trae-agent and Unsloth — love tinkering with LLMs, and I'm currently exploring mechanistic interpretability. CS + Math, 4.0 GPA.",
+  'I shipped a staff-facing clinical platform that connects to their EHR, now running across 7 practice locations. No one handed me requirements. I went on-site, talked to the staff, found where their day actually broke down, and built the system, just me and my agents.',
+  "Same playbook on consumer products: I built a multi-timeline video editor from scratch that's now in users' hands, generated thousands in revenue, and anchored a key company partnership.",
+  "Before that, I was a founding engineer at OmniSynkAI, an early-stage e-commerce startup, and I contribute to open source like ByteDance's trae-agent.",
+  "On the side, I love tinkering with LLMs, and I'm currently exploring mechanistic interpretability.",
 ];
 
 export const skills = [
@@ -99,35 +100,18 @@ export const projects: Project[] = [
     blurb:
       'Two-stage QLoRA fine-tune of a 7B code model for finite-element code generation — lifted execution pass rate 0% → 79.7%, matching Gemini 3 Pro and beating 123B Mistral Large, trained on a single A100 in 67 minutes. Paper in preparation.',
     tags: ['QLoRA', 'PyTorch', 'PEFT', 'FreeFEM++'],
-    // url: TODO (paper/repo when public)
+  },
+  {
+    title: 'Neuro-Symbolic LLM Validator',
+    blurb:
+      'A hallucination-detection pipeline that extracts atomic claims with FActScore-style voting, plans a provably complete verification order with a Fast Downward PDDL planner, and runs 15 evidence-gathering agents over a ChromaDB RAG corpus — grading 97 claims at 84% cross-validator agreement in under 5 minutes. Radiance Technologies Innovation Bowl finalist.',
+    tags: ['PDDL planner', 'ChromaDB', 'RAG', 'Multi-agent'],
   },
   {
     title: 'Sprig',
     blurb:
       'A sparse n-gram indexed code-search engine in Rust delivering sub-millisecond regex search across large codebases.',
     tags: ['Rust', 'Search', 'Systems'],
-    // url: 'https://github.com/rupaut98/sprig', // TODO confirm
-  },
-  {
-    title: 'RAG Knowledge Assistant',
-    blurb:
-      'Retrieval-augmented pipeline that chunks and embeds documents into a pgvector store, with reranking, prompt templating, and source citations feeding OpenAI + Claude to reduce hallucination.',
-    tags: ['LangChain', 'pgvector', 'OpenAI', 'Claude'],
-    // url: TODO
-  },
-  {
-    title: 'Drag-and-Drop Website Builder',
-    blurb:
-      'A visual website builder with customizable components, multi-page routing, and one-click publishing for non-technical users.',
-    tags: ['Next.js', 'GrapesJS', 'Tailwind'],
-    url: 'https://github.com/rupaut98/drag-and-drop-webbuilder',
-  },
-  {
-    title: 'Topic Modeling with BERTopic',
-    blurb:
-      'Topic modeling over academic abstracts using sentence embeddings + UMAP/HDBSCAN, clustering into interpretable topics visualized on reduced embeddings.',
-    tags: ['BERTopic', 'Python', 'UMAP'],
-    url: 'https://github.com/rupaut98/topic_modeling_BERT',
   },
 ];
 
@@ -152,5 +136,4 @@ export const education = {
   school: 'University of Southern Mississippi',
   degree: 'B.S. Computer Science & Mathematics',
   range: 'Graduated May 2026',
-  detail: '4.0 GPA · Top 10% YC Applicant (W24) · Techstars Interview Finalist',
 };
